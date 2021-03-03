@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hormigonera</title>
+	<meta charset="utf-8">
+	
+
+	<!--ESTILO PARA VISUALIZAR HTML-->
+	<link rel="stylesheet" type="text/css" href="css/estilos.css">
+	
+	<!--SCRIPT DE funciones de autentificcacion-->
+	<script type="text/javascript" src="js/funciones.js"></script>
+
+	<!-------------------------------------------------FIREBASE LIBS------------------------------------------------->
+	<script src="https://www.gstatic.com/firebasejs/5.9.4/firebase.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-auth.js"></script>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+	<!-- TODO: Add SDKs for Firebase products that you want to use
+	     https://firebase.google.com/docs/web/setup#available-libraries -->
+	     
+	<!--SCRIPT DE CONEXIÓN-->
+	<script type="text/javascript" src="js/conexion.js"></script>
+	<!-------------------------------------------------------------------------------------------------------------->
+</head>
+<body>
+	<!--Contenedor de login-->
+	<div class="cont">
+		<!--Parte 1 del contenedor-->
+		<div class="cont_p1"></div>
+		<!--Parte 2 del contenedor-->
+		<div class="cont_p2">
+			<h1 style="width: 100%;text-align: center; color: #170977;">Iniciar</h1>
+			<div class="cont_p2s1">
+				<span class="spant">Correo <span style="color: red;">*</span> </span>
+				<input class="contp2_inp" type="text" name="email" placeholder="correo@mail.com">
+				<span style="width: 80%; color: red;">Por favor revise su correo</span>
+				<span class="spant">Contraseña <span style="color: red;">*</span> </span>
+				<input class="contp2_inp" type="password" name="email" placeholder="*****">
+				<span style="width: 80%; color: red;">Por favor revise su contraseña</span>
+				<input class="contp2_btn" type="button" value="ACEPTAR" name="is">
+				<div class="contp2_div">¿No eres miembro? <span onclick="registrar()">HAS CLICK AQUÍ</span></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
